@@ -9,7 +9,7 @@
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Netjapa websites e apps" />
 <script type="application/ld+json">
-{"@type":"WebSite","url":"http://localhost:4000/","headline":"Confira nossos serviços","sameAs":["https://twitter.com/netjapa","https://www.facebook.com/netjapa"],"name":"Netjapa","@context":"https://schema.org"}</script>
+{"@type":"WebSite","headline":"Confira nossos serviços","sameAs":["https://twitter.com/netjapa","https://www.facebook.com/netjapa"],"url":"http://localhost:4000/","name":"Netjapa","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <head>
@@ -42,18 +42,18 @@
         />
       </a>
  
-      <ul class="nav  ">
+      <ul class="nav">
        
         
 
 
-  <li  data-target="#nav-virtual"
+  <li  class="nav-item"
   >
     <a  class="nav-link" href="/contact">Contato</a>
     
   </li>
 
-  <li  data-target="#nav-virtual"
+  <li  class="nav-item"
   >
     <a  class="nav-link" href="/posts">Trabalhos</a>
     
@@ -71,7 +71,12 @@
 
       <main>
         
-    <h1>Confira nossos serviços</h1>
+    <section>
+  <div class="banner">
+    
+  </div>
+</section>
+ <h1>Confira nossos serviços</h1>
 <section class="services">
   
 
@@ -111,20 +116,18 @@
   
 </section>
  
+<h1 class="margin-0">Dúvidas?</h1>
 <section class="flexcontainer">
-  <div>
-    <ul class="list-unstyled list-big-headlines ">
-      <li><h2 class="margin-0">Dúvidas?</h2></li>
-      <li>Entre em contato!</li>
-    </ul>
+  <div class="contact-div ">
+    <p>Entre em contato!</p>
+
     <p>Pelos telefones</p>
-    <ul class="list-unstyled ">
-      <li>(21)99245-8798</li>
-      <li>(21)99245-8798</li>
-    </ul>
+
+    <p>(21)99245-8798</p>
+    <p>(21)99245-8798</p>
   </div>
 
-  <div>
+  <div class="contact-div ">
     <form id="contact-form" name="contact" netlify>
       <label class="float-left" for="input-prename">Nome</label>
       <input
@@ -168,24 +171,30 @@
   </div>
 </section>
 
-<section class="background-color-grey">
-  <div class="inner-content-top-out-bottom-out">
-    <div class="container">
-      <h2 class="text-center">Trabalhos Recentes</h2>
-      <div class="row">
-        <div class="news-press-section">
-          <div class="press-news-container">
-            <div class="col-md-6 posts">
-              <ul class="list-unstyled list-news">
-                <!-- orders content according to the "publishdate" field in front matter -->
-                
-              </ul>
-              <!-- pagination -->
-            </div>
-          </div>
-        </div>
-      </div>
+<h1 class="text-center">Trabalhos Recentes</h1>
+<section>
+  <div class="works">
+    <!-- orders content according to the "publishdate" field in front matter -->
+    
+
+    <div class="recent">
+      <a href="/post/rack">
+        <img
+          class="img-fluid img-thumbnail pull-left"
+          src="/photos/logo.png"
+        />
+      </a>
+
+      <h3>MontagemBR</h3>
+
+      <p>
+        
+      </p>
+
+      <span class="post-date">Mar 15, 2020</span>
     </div>
+
+    
   </div>
 </section>
 
@@ -193,181 +202,61 @@
       </main>
       <!-- start footer section -->
 
-<footer id="footer">
+<footer>
    
-  <div class="footer-pre-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <div class="footer-pre-section-element">
-            <i class="fa fa-phone"></i>
-            <a href="tel:99-234-4345"> (21)99245-8798</a>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <div class="footer-pre-section-element">
-            <i class="fa fa-envelope"></i>
-            <a href="mailto:bruno@gmail.com.com">bruno@gmail.com</a>
-          </div>
-        </div>
-      </div>
-    </div>
+
+  <div class="footer-pre-section-element">
+    <i class="fa fa-phone"></i>
+    <a href="tel:99-234-4345"> (21)99245-8798</a>
+
+    <i class="fa fa-envelope"></i>
+    <a href="mailto:bruno@gmail.com.com">bruno@gmail.com</a>
   </div>
+
   
   <div class="footer-main-section hidden-sm hidden-xs">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2 col-md-2 col-sm-3">
-          <h4>Bruno Montador</h4>
+    <h4>NETJAPA</h4>
 
-          <ul class="list-unstyled accordion-content">
-            <li>
-              <a href="/about">Empresa</a>
-            </li>
+    <ul class="list-unstyled accordion-content">
+      <li>
+        <a href="/about">Empresa</a>
+      </li>
 
-            <li>
-              <a href="/contact">Contato</a>
-            </li>
+      <li>
+        <a href="/contact">Contato</a>
+      </li>
 
-            <li>
-              <a href="/contact">Clientes</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-2 col-sm-3">
-          <h4>Sobre Nós</h4>
-           
-          <ul class="list-unstyled">
-            <li class="social-icons">
-              <a href="https://www.facebook.com/" target="_blank">
-                <i class="fa fa-facebook-square fa-2x fa-fh"></i>
-              </a>
-              <a href="https://twitter.com/" target="_blank">
-                <i class="fa fa-twitter-square fa-2x fa-fh twitter-icon"></i>
-              </a>
-              <a href="https://www.instagram.com/" target="_blank">
-                <i class="fa fa-instagram fa-2x"></i>
-              </a>
-              <a href="https://www.youtube.com/" target="_blank">
-                <i class="fa fa-youtube-play fa-2x"></i>
-              </a>
-            </li>
-          </ul>
-          
-        </div>
-      </div>
-    </div>
+      <li>
+        <a href="/contact">Clientes</a>
+      </li>
+    </ul>
   </div>
-  <div class="footer-main-section hidden-md hidden-lg">
-    <div class="container">
-      <div class="footer-accordion">
-        <div class="row">
-          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-            <span class="footer-accordion-header">
-              <h4>Bruno Montador</h4>
-            </span>
-            <ul class="list-unstyled accordion-content">
-              <li>
-                <a href="/about">Empresa</a>
-              </li>
 
-              <li>
-                <a href="/contact">Contato</a>
-              </li>
-
-              <li>
-                <a href="/customers">Clientes</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-            <span class="footer-accordion-header">
-              <h4>Legal</h4>
-            </span>
-            <ul class="list-unstyled accordion-content">
-              <li>
-                <a href="/rechtliches/system-policies">Política de trabalho</a>
-              </li>
-
-              <li>
-                <a href="/rechtliches/agb">Termos e condiçoes</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-            <span class="footer-accordion-header">
-              <h4>Sobre Nós</h4>
-            </span>
-             
-            <ul class="list-unstyled">
-              <li class="social-icons">
-                <a href="https://www.facebook.com/" target="_blank">
-                  <i class="fa fa-facebook-square fa-2x fa-fh"></i>
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                  <i class="fa fa-twitter-square fa-2x fa-fh twitter-icon"></i>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                  <i class="fa fa-instagram fa-2x"></i>
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                  <i class="fa fa-youtube-play fa-2x"></i>
-                </a>
-              </li>
-            </ul>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-post-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <p class="text-center">
-            <small>© 2019. Bruno Montagem</small>
-          </p>
-        </div>
-      </div>
-    </div>
+  <div class="col-lg-2 col-md-2 col-sm-3">
+    <h4>Sobre Nós</h4>
+     
+    <ul class="list-unstyled">
+      <li class="social-icons">
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fa fa-facebook-square fa-2x fa-fh"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <i class="fa fa-twitter-square fa-2x fa-fh twitter-icon"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <i class="fa fa-youtube-play fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+    
   </div>
 </footer>
 <!-- end footer section -->
 
-<div class="back-top animate animated hidden">
-  <i class="fa fa-arrow-up"></i>
-</div>
-
-      <!-- Bootstrap core JavaScript -->
-<script src="/assets/js/vendor.js"></script>
-<script src="/assets/js/app.js"></script>
-<script src="/assets/js/holder.js"></script>
-<script>
-  $(document).ready(function() {
-    //initialize swiper when document ready
-    let mySwiper = new Swiper(".swiper-container", {
-      // Optional parameters
-      loop: true,
-      direction: "horizontal",
-      slidesPerView: 1,
-      speed: 250,
-      initialSlide: 1,
-      nextButton: $(".swiper-button-next").get(0),
-      prevButton: $(".swiper-button-prev").get(0),
-      pagination: $(".swiper-pagination").get(0),
-      paginationClickable: true
-    });
-  });
-</script>
-
-
-<!-- 
-   MADE BY NETJAPA
-  -->
+   
   </body>
 </html>
 

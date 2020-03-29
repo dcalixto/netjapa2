@@ -86,6 +86,16 @@ header {
   }
 }
 
+footer {
+  border-top: 1px dashed var(--lightgray);
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 /* MVP.css v1.0.1 - by Andy Brewer */
 
 nav {
@@ -236,8 +246,8 @@ pre {
 .nav {
   padding: 0;
   list-style: none;
-  float: left;
-  margin-left: 1em;
+  float: right;
+  margin-right: 1em;
 }
 
 .nav-item {
@@ -429,8 +439,11 @@ a i {
 
 .flexcontainer {
   flex-direction: row;
+  align-content: space-between;
 }
-
+.contact-div {
+  margin: 1rem;
+}
 /* Forms */
 form {
   border: 1px solid var(--color-bg-secondary);
@@ -473,4 +486,28 @@ textarea {
 label {
   font-weight: bold;
   margin-bottom: 0.2rem;
+}
+
+/* works */
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: var(--justify-important);
+
+  .recent {
+    border: 1px solid var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow) var(--color-shadow);
+    margin: 1rem;
+    padding: 1.25rem;
+    width: var(--width-card);
+
+    &:hover {
+      box-shadow: var(--box-shadow) var(--color-bg-secondary);
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
 }

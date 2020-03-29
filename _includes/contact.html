@@ -1,18 +1,16 @@
 {% if site.data.information %} {% assign info = site.data.information %}
+<h1 class="margin-0">Dúvidas?</h1>
 <section class="flexcontainer">
-  <div>
-    <ul class="list-unstyled list-big-headlines ">
-      <li><h2 class="margin-0">Dúvidas?</h2></li>
-      <li>Entre em contato!</li>
-    </ul>
+  <div class="contact-div ">
+    <p>Entre em contato!</p>
+
     <p>Pelos telefones</p>
-    <ul class="list-unstyled ">
-      <li>{{ info.phone }}</li>
-      <li>{{ info.phone2 }}</li>
-    </ul>
+
+    <p>{{ info.phone }}</p>
+    <p>{{ info.phone2 }}</p>
   </div>
 
-  <div>
+  <div class="contact-div ">
     <form id="contact-form" name="contact" netlify>
       <label class="float-left" for="input-prename">Nome</label>
       <input

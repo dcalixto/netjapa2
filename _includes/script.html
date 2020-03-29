@@ -1,0 +1,26 @@
+<!-- Bootstrap core JavaScript -->
+<script src="{{ site.baseurl }}/assets/js/vendor.js"></script>
+<script src="{{ site.baseurl }}/assets/js/app.js"></script>
+<script src="{{ site.baseurl }}/assets/js/holder.js"></script>
+<script>
+  $(document).ready(function() {
+    //initialize swiper when document ready
+    let mySwiper = new Swiper(".swiper-container", {
+      // Optional parameters
+      loop: true,
+      direction: "horizontal",
+      slidesPerView: 1,
+      speed: 250,
+      initialSlide: 1,
+      nextButton: $(".swiper-button-next").get(0),
+      prevButton: $(".swiper-button-prev").get(0),
+      pagination: $(".swiper-pagination").get(0),
+      paginationClickable: true
+    });
+  });
+</script>
+
+
+<!-- 
+   MADE BY NETJAPA
+  -->

@@ -1,0 +1,58 @@
+{% if site.data.information %} {% assign info = site.data.information %}
+<section class="flexcontainer">
+  <div>
+    <ul class="list-unstyled list-big-headlines ">
+      <li><h2 class="margin-0">Dúvidas?</h2></li>
+      <li>Entre em contato!</li>
+    </ul>
+    <p>Pelos telefones</p>
+    <ul class="list-unstyled ">
+      <li>{{ info.phone }}</li>
+      <li>{{ info.phone2 }}</li>
+    </ul>
+  </div>
+
+  <div>
+    <form id="contact-form" name="contact" netlify>
+      <label class="float-left" for="input-prename">Nome</label>
+      <input
+        name="name"
+        type="text"
+        required="required"
+        class="form-control"
+        id="input-prename"
+        name="input-prename"
+        value=""
+      />
+
+      <label class="float-left" for="input-mail">Email</label>
+      <input
+        type="email"
+        required="required"
+        class="form-control"
+        id="input-mail"
+        name="input-mail"
+        value=""
+        name="email"
+      />
+
+      <label class="float-left" for="input-message">Mensagem</label>
+      <textarea
+        class="form-control support-message"
+        required="required"
+        rows="7"
+        name="message"
+        id="input-message"
+        name="input-message"
+      ></textarea>
+
+      <input
+        type="submit"
+        value="Enviar"
+        id="btn-submit"
+        class="btn btn-yellow btn-md"
+      />
+    </form>
+  </div>
+</section>
+{% endif %}

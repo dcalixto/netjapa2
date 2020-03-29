@@ -1,0 +1,49 @@
+<section class="noswipemenu-matrix">
+  <div class="swiper-container startpage-slider">
+    <div class="swiper-wrapper">
+      {% for slide in site.slides limit:5 %}
+      <div
+        class="startpage-header swiper-slide"
+        style="background-image: url('{{ slide.image }}');"
+      >
+        <div class="container container-slider-startpage">
+          <div class="row row-flex-center-all">
+            <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12">
+              <div class="color-white">
+                <ul
+                  class="list-unstyled list-big-headlines text-shadow-default "
+                >
+                  <li>
+                    {{ slide.heading }}
+                  </li>
+                </ul>
+                <p class="lead text-shadow-default">
+                  {{ slide.text }}
+                </p>
+                <ul class="list-unstyled list-inline list-buttons">
+                  <li>
+                    <a
+                      id="slide-1"
+                      href="dedicated-rootserver/ex52-nvme"
+                      class="btn btn-yellow"
+                    >
+                      {{ slide.link }}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev swiper-left hidden-xs">
+      <i class="fa fa-2x fa-chevron-left"></i>
+    </div>
+    <div class="swiper-button-next swiper-right hidden-xs">
+      <i class="fa fa-2x fa-chevron-right"></i>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,50 @@
+<section class="background-color-grey">
+  <div class="inner-content-top-out-bottom-out">
+    <div class="container">
+      <h2 class="text-center">Trabalhos Recentes</h2>
+      <div class="row">
+        <div class="news-press-section">
+          <div class="press-news-container">
+            <div class="col-md-6 posts">
+              <ul class="list-unstyled list-news">
+                <!-- orders content according to the "publishdate" field in front matter -->
+                {% for post in site.posts limit:7 %}
+
+                <li>
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <a href="{{ post.url }}">
+                        <img
+                          class="img-fluid img-thumbnail pull-left"
+                          src="{{ post.post-images[0] }}"
+                        />
+
+                        <div class="row">
+                          <div class="col-xs-8 col-sm-6">
+                            <h3>{{ post.title }}</h3>
+                          </div>
+                          <div class="col-xs-4 col-sm-6">
+                            <p>
+                              {{ post.heading}}
+                            </p>
+
+                            <span class="post-date"
+                              >{{ post.date | date: "%b %-d, %Y" }}</span
+                            >
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+
+                {% endfor %}
+              </ul>
+              <!-- pagination -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

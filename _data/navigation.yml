@@ -1,0 +1,7 @@
+# specify main menu items here
+
+- text: Contato
+  url: /contact
+
+- text: Trabalhos
+  url: /posts

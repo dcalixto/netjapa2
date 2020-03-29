@@ -1,0 +1,26 @@
+<!-- start Mobile Nav section -->
+
+
+
+<header>
+  <nav>
+     
+      <a class="home" href="{{ "/" | relative_url }}">
+        <img
+          style="width:152px;height:29px"
+          class="navbar-logo"
+          src="{{ site.baseurl }}/photos/netjapa-logo.svg"
+          alt="{{ site.title }}"
+        />
+      </a>
+ 
+      <ul class="nav  ">
+       
+        {% include navigation.html navigation=site.data.navigation %} 
+
+      </ul>
+  </nav>
+</header>
+
+
+<!-- end of Header section -->

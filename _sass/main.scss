@@ -73,6 +73,7 @@ a[href] {
 
 main {
   padding: 1rem;
+  display: block;
 }
 .container {
   padding-top: 5rem;
@@ -111,7 +112,7 @@ header {
 }
 
 footer {
-  border-top: 1px dashed var(--lightgray);
+  display: block;
   background-color: #383838;
   color: #fff;
   &:after {
@@ -545,4 +546,22 @@ small {
 
 #nav-container a {
   color: #ffffff;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+footer {
+}
+
+/* Trick */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
 }

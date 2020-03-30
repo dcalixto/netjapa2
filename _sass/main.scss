@@ -73,7 +73,9 @@ a[href] {
 
 main {
   padding: 1rem;
-  margin-top: 90px;
+}
+.container {
+  padding-top: 5rem;
 }
 
 header {
@@ -88,12 +90,20 @@ header {
 
 footer {
   border-top: 1px dashed var(--lightgray);
-
+  background-color: #383838;
+  color: #fff;
   &:after {
     content: "";
     display: table;
     clear: both;
   }
+}
+.footer-section {
+  float: left;
+  padding: 1rem;
+}
+.footer-section a {
+  color: #fff;
 }
 
 /* MVP.css v1.0.1 - by Andy Brewer */
@@ -510,4 +520,14 @@ label {
       max-width: 100%;
     }
   }
+}
+small {
+  font-size: 0.8rem;
+}
+.nav-item a {
+  color: #fff;
+}
+
+#nav-container a {
+  color: #ffffff;
 }

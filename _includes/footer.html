@@ -1,55 +1,25 @@
 <!-- start footer section -->
 
 <footer>
-  {% if site.data.information %} {% assign info = site.data.information %}
-
-  <div class="footer-pre-section-element">
-    <i class="fa fa-phone"></i>
-    <a href="tel:99-234-4345"> {{info.phone}}</a>
-
-    <i class="fa fa-envelope"></i>
-    <a href="mailto:bruno@gmail.com.com">{{info.email}}</a>
-  </div>
-
-  {% endif %}
-  <div class="footer-main-section hidden-sm hidden-xs">
-    <h4>NETJAPA</h4>
-
-    <ul class="list-unstyled accordion-content">
-      <li>
-        <a href="{{ site.baseurl }}/about">Empresa</a>
-      </li>
-
-      <li>
-        <a href="{{ site.baseurl }}/contact">Contato</a>
-      </li>
-
-      <li>
-        <a href="{{ site.baseurl }}/contact">Clientes</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="col-lg-2 col-md-2 col-sm-3">
-    <h4>Sobre Nós</h4>
+  <section class="flexcontainer">
     {% if site.data.information %} {% assign info = site.data.information %}
-    <ul class="list-unstyled">
-      <li class="social-icons">
-        <a href="https://www.facebook.com/" target="_blank">
-          <i class="fa fa-facebook-square fa-2x fa-fh"></i>
-        </a>
-        <a href="https://twitter.com/" target="_blank">
-          <i class="fa fa-twitter-square fa-2x fa-fh twitter-icon"></i>
-        </a>
-        <a href="https://www.instagram.com/" target="_blank">
-          <i class="fa fa-instagram fa-2x"></i>
-        </a>
-        <a href="https://www.youtube.com/" target="_blank">
-          <i class="fa fa-youtube-play fa-2x"></i>
-        </a>
-      </li>
-    </ul>
-    {% endif %}
-  </div>
+
+    <div class="footer-section">
+      <i class="fa fa-phone"></i>
+      <a href="tel:(24)993017256"> {{info.phone}}</a>
+
+      <i class="fa fa-envelope"></i>
+      <a href="mailto:calixtodaniel@gmail.com">{{info.email}}</a>
+
+      {% endif %}
+
+      <p class="text-center">
+        <small>© 2020. NETJAPA</small>
+      </p>
+
+      {% if site.data.information %} {% assign info = site.data.information %}
+      {% endif %}
+    </div>
+  </section>
 </footer>
 <!-- end footer section -->

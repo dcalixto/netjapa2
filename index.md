@@ -26,4 +26,5 @@ services:
     icon: "/photos/frontapi.svg"
 description: ""
 icon: ""
+banner: "/photos/banner.png"
 ---

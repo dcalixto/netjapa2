@@ -50,12 +50,16 @@ p {
 
   /* 600px /16 */
 }
-
+.banner {
+  margin-top: 50px;
+}
 .tmpl-post li,
 img {
-  max-width: 37.5em;
+  /* max-width: 37.5em;*/
 
   /* 600px /16 */
+  width: 100%;
+  height: auto;
 }
 
 p,

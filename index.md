@@ -3,26 +3,21 @@ title: Confira nossos serviços
 layout: home
 services:
   - heading: SITES
-    description: Sites completos com foco no bom design e funcionalidade,
-      oferecendo uma experiência de navegação agradável para o seu potencial cliente.
+    description: Sites completos com foco no bom design, funcionalidade e responsivo tanto desktop quanto mobile e oferecendo uma experiência de navegação agradável para o seus clientes.
+
     icon: "/photos/webpage.svg"
   - heading: E-COMMERCE
-    description: Montador na sua casa em até no máximo 24 horas.
+    description: Lojas com sistemas the autenticação, busca, cadastro de produtos, pagamento, avaliação, notificação e administração.
     icon: "/photos/ecomerce.svg"
   - heading: MOBILE APPS
-    description:
-      Montagem de Moveis em poucos minutos. Garantia de Qualidade no serviço
-      contratado.
+    description: Aplicativos mobile hibridos com foco na simplicidade e funcionalidade.
     icon: "/photos/mobile.svg"
   - heading: BACKEND API
-    description:
-      Montagem de Moveis em poucos minutos. Garantia de Qualidade no serviço
-      contratado.
+    description: Apis, respeitando as normas e especificações da https://jsonapi.org/ orientadas para alta performace.
+
     icon: "/photos/backend.svg"
   - heading: FRONTEND API
-    description:
-      Montagem de Moveis em poucos minutos. Garantia de Qualidade no serviço
-      contratado.
+    description: Apis utilizando o melhor da tecnologia para front-end com js.
     icon: "/photos/frontapi.svg"
 description: ""
 icon: ""

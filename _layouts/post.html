@@ -9,7 +9,11 @@ layout: default
   <div>
     {% for image in page.post-images %}
     <div class="col-lg-3 col-md-4 col-6 image-gallery">
-      <a href="{{ image }}" title="{{ image.name }}" class="d-block mb-4 h-100">
+      <a
+        href="{{ page.site }}"
+        title="{{ image.name }}"
+        class="d-block mb-4 h-100"
+      >
         <img
           class="img-fluid img-thumbnail img-responsive"
           src="{{ image }}"
@@ -19,10 +23,11 @@ layout: default
       </a>
     </div>
     {% endfor %}
-
+    <a href="{{ page.site }}">{{ page.site }}</a>
     <p>
       {{ page.body }}
     </p>
+
     <span class="post-date">{{ page.date | date: "%b %-d, %Y" }}</span>
   </div>
 </section>

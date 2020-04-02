@@ -12,12 +12,12 @@
         />
       </a>
 
-      <h3>{{ post.title }}</h3>
+      <h3><a id="black" href="{{ post.url}}">{{ post.title }}</a></h3>
 
       <p>
         {{ post.heading}}
       </p>
-
+      <p><a class="black-link" href="{{ post.site }}">{{ post.site }}</a></p>
       <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
     </div>
 

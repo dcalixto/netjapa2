@@ -18,12 +18,12 @@ layout: default
         />
       </a>
 
-      <h3>{{ post.title }}</h3>
+      <h3 id="black">{{ post.title }}</h3>
 
       <p>
         {{ post.heading}}
       </p>
-
+      <p><a href="{{ post.site }}">{{ post.site }}</a></p>
       <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
     </div>
 

@@ -7,7 +7,17 @@
     default: site.title }}{% endif %}
   </title>
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-
+  <script type="text/javascript">
+    function hasClass(e, t) {
+      return e.className.match(new RegExp("(\\s|^)" + t + "(\\s|$)"));
+    }
+    var el = document.documentElement;
+    var cl = "no-js";
+    if (hasClass(el, cl)) {
+      var reg = new RegExp("(\\s|^)" + cl + "(\\s|$)");
+      el.className = el.className.replace(reg, " js");
+    }
+  </script>
   <!-- 
    MADE BY NETJAPA
   -->

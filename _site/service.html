@@ -5,11 +5,13 @@
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="The Blog" />
 <meta property="og:locale" content="en_US" />
+<meta name="description" content="Criação de sites e Desenvolvimento de sites e apps, mobile apps, aplicativos para celular, aplicativos android, site, app, aplicativo, e-commerce, loja virtual" />
+<meta property="og:description" content="Criação de sites e Desenvolvimento de sites e apps, mobile apps, aplicativos para celular, aplicativos android, site, app, aplicativo, e-commerce, loja virtual" />
 <link rel="canonical" href="http://localhost:4000/service" />
 <meta property="og:url" content="http://localhost:4000/service" />
 <meta property="og:site_name" content="Netjapa websites e apps" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"The Blog","url":"http://localhost:4000/service","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"The Blog","description":"Criação de sites e Desenvolvimento de sites e apps, mobile apps, aplicativos para celular, aplicativos android, site, app, aplicativo, e-commerce, loja virtual","url":"http://localhost:4000/service","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <head>
@@ -20,7 +22,17 @@
     The Blog
   </title>
   <link rel="stylesheet" href="/assets/css/main.css">
-
+  <script type="text/javascript">
+    function hasClass(e, t) {
+      return e.className.match(new RegExp("(\\s|^)" + t + "(\\s|$)"));
+    }
+    var el = document.documentElement;
+    var cl = "no-js";
+    if (hasClass(el, cl)) {
+      var reg = new RegExp("(\\s|^)" + cl + "(\\s|$)");
+      el.className = el.className.replace(reg, " js");
+    }
+  </script>
   <!-- 
    MADE BY NETJAPA
   -->
@@ -34,7 +46,11 @@
 <header>
   <nav >
     <div id="nav-container">
-     
+      <div
+      class="navigation_container navigation_container1"
+      role="navigation"
+      aria-label="Main menu"
+    >
       <a class="home" href="/">
         <img
           style="width:152px;height:20px"
@@ -49,13 +65,13 @@
         
 
 
-  <li  class="nav-item"
+  <li  class="nav-item "
   >
     <a  class="nav-link" href="/contact">Contato</a>
     
   </li>
 
-  <li  class="nav-item"
+  <li  class="nav-item "
   >
     <a  class="nav-link" href="/posts">Trabalhos</a>
     
@@ -65,6 +81,7 @@
  
 
       </ul>
+    </div>
     </div>
   </nav>
 </header>
@@ -112,6 +129,33 @@
   </section>
 </footer>
 <!-- end footer section -->
+
+      <!-- Bootstrap core JavaScript -->
+<script src="/assets/js/apollo.js"></script>
+<script src="/assets/js/vanilla.js.responsive.menu.js"></script>
+
+<script type="text/javascript">
+  responsivemenu.init({
+    wrapper: document.querySelector(".navigation_container1"),
+    //togglecontent: "menu",
+    togglecontent: '<span class="toggle-text">menu</span>',
+
+    sticky: 0
+    //      animateduration: 1000,
+    //      subanimateduration: 1000,
+  });
+
+  //    responsivemenu.init({
+  //        wrapper: document.querySelector('.navigation_container2'),
+  //        onAfterInit: function() {
+  //            console.log('after init 2');
+  //        }
+  //    });
+</script>
+
+<!-- 
+   MADE BY NETJAPA
+  -->
 
    
   </body>

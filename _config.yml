@@ -1,10 +1,14 @@
 # Basic settings
-url: "netjapa.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.netjapa.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Netjapa websites e apps" # the name of your site, e.g. ACME Corp.
 description: "Criação de sites e Desenvolvimento de sites e apps,
   mobile apps, aplicativos para celular,
   aplicativos android, site, app, aplicativo, e-commerce, loja virtual"
+tagline: "Criação de sites e Desenvolvimento de sites e apps,
+  mobile apps, aplicativos para celular,
+  aplicativos android, site, app, aplicativo, e-commerce, loja virtual"
+lang: "pt-BR"
 # Build settings
 markdown: kramdown
 

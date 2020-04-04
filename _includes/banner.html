@@ -1,3 +1,12 @@
 <section class="banner">
-  <img src="{{  page.banner | site.baseurl }}" />
+  <picture>
+    <source
+      media="(min-width: 650px)"
+      srcset="{{  page.banner | site.baseurl }}"
+    />
+    <source
+      media="(max-width: 600px)"
+      srcset="{{  page.banner2 | site.baseurl }}"
+    />
+  </picture>
 </section>

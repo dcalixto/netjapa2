@@ -30,6 +30,10 @@
     Hotelio
   </title>
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"
+  />
   <script type="text/javascript">
     function hasClass(e, t) {
       return e.className.match(new RegExp("(\\s|^)" + t + "(\\s|$)"));
@@ -158,7 +162,7 @@
       <!-- Bootstrap core JavaScript -->
 <script src="/assets/js/apollo.js"></script>
 <script src="/assets/js/vanilla.js.responsive.menu.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script type="text/javascript">
   responsivemenu.init({
     wrapper: document.querySelector(".navigation_container1"),
@@ -177,7 +181,23 @@
   //        }
   //    });
 </script>
-
+<script type="text/javascript">
+  var slider = tns({
+    container: ".my-slider",
+    mode: "carousel",
+    items: 1,
+    slideBy: "page",
+    autoplay: true,
+    nav: false,
+    autoplayButtonOutput: false,
+    controlsText: [" < ", " > "],
+    controlsContainer: "#custom_controlsContainer",
+    nextButton: "#prev",
+    nextButton: "#next", // String selecto
+    autoHeight: true,
+    autoWidth: true
+  });
+</script>
 <!-- 
    MADE BY NETJAPA
   -->

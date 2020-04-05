@@ -136,6 +136,18 @@ footer {
   color: #fff;
 }
 
+section {
+  text-align: center;
+  position: relative;
+  margin: 40px;
+  height: calc(100% - 80px);
+  overflow: hidden;
+}
+
+#banner {
+  overflow: hidden;
+}
+
 /* MVP.css v1.0.1 - by Andy Brewer */
 
 nav {

@@ -28,6 +28,10 @@
     Confira nossos serviços
   </title>
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"
+  />
   <script type="text/javascript">
     function hasClass(e, t) {
       return e.className.match(new RegExp("(\\s|^)" + t + "(\\s|$)"));
@@ -97,17 +101,34 @@
 
       <main>
         <div >
-    <section class="banner">
-  <picture>
-    <source
-      media="(min-width: 650px)"
-      srcset="/photos/banner.png"
-    />
-    <source
-      media="(max-width: 600px)"
-      srcset=""
-    />
-  </picture>
+    <section id="banner">
+  <div id="custom_controlsContainer">
+    <div id="prev">
+      <span>
+      <svg width="32" height="32" viewBox="0 0 64 64">
+        <path
+          id="arrow-left-1"
+          d="M46.077 55.738c0.858 0.867 0.858 2.266 0 3.133s-2.243 0.867-3.101 0l-25.056-25.302c-0.858-0.867-0.858-2.269 0-3.133l25.056-25.306c0.858-0.867 2.243-0.867 3.101 0s0.858 2.266 0 3.133l-22.848 23.738 22.848 23.738z"
+        />
+      </svg>
+   
+    </div>
+    <div id="next">
+      <span>
+      <svg width="32" height="32" viewBox="0 0 64 64">
+        <path
+          id="arrow-right-1"
+          d="M17.919 55.738c-0.858 0.867-0.858 2.266 0 3.133s2.243 0.867 3.101 0l25.056-25.302c0.858-0.867 0.858-2.269 0-3.133l-25.056-25.306c-0.858-0.867-2.243-0.867-3.101 0s-0.858 2.266 0 3.133l22.848 23.738-22.848 23.738z"
+        />
+      </svg>
+    </span>
+  </div>
+  </div>
+  <div class="my-slider">
+    <div class="item"><img src="assets/img/slide-2.jpg" alt="" /></div>
+    <div class="item"><img src="photos/banner.png" alt="" /></div>
+    <div class="item"><img src="assets/img/slide-4.jpg" alt="" /></div>
+  </div>
 </section>
  <section>
   <h1 class="container ">Confira nossos serviços</h1>
@@ -334,7 +355,7 @@
       <!-- Bootstrap core JavaScript -->
 <script src="/assets/js/apollo.js"></script>
 <script src="/assets/js/vanilla.js.responsive.menu.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script type="text/javascript">
   responsivemenu.init({
     wrapper: document.querySelector(".navigation_container1"),
@@ -353,7 +374,23 @@
   //        }
   //    });
 </script>
-
+<script type="text/javascript">
+  var slider = tns({
+    container: ".my-slider",
+    mode: "carousel",
+    items: 1,
+    slideBy: "page",
+    autoplay: true,
+    nav: false,
+    autoplayButtonOutput: false,
+    controlsText: [" < ", " > "],
+    controlsContainer: "#custom_controlsContainer",
+    nextButton: "#prev",
+    nextButton: "#next", // String selecto
+    autoHeight: true,
+    autoWidth: true
+  });
+</script>
 <!-- 
    MADE BY NETJAPA
   -->

@@ -1,12 +1,29 @@
-<section class="banner">
-  <picture>
-    <source
-      media="(min-width: 650px)"
-      srcset="{{  page.banner | site.baseurl }}"
-    />
-    <source
-      media="(max-width: 600px)"
-      srcset="{{  page.banner2 | site.baseurl }}"
-    />
-  </picture>
+<section id="banner">
+  <div id="custom_controlsContainer">
+    <div id="prev">
+      <span>
+      <svg width="32" height="32" viewBox="0 0 64 64">
+        <path
+          id="arrow-left-1"
+          d="M46.077 55.738c0.858 0.867 0.858 2.266 0 3.133s-2.243 0.867-3.101 0l-25.056-25.302c-0.858-0.867-0.858-2.269 0-3.133l25.056-25.306c0.858-0.867 2.243-0.867 3.101 0s0.858 2.266 0 3.133l-22.848 23.738 22.848 23.738z"
+        />
+      </svg>
+   
+    </div>
+    <div id="next">
+      <span>
+      <svg width="32" height="32" viewBox="0 0 64 64">
+        <path
+          id="arrow-right-1"
+          d="M17.919 55.738c-0.858 0.867-0.858 2.266 0 3.133s2.243 0.867 3.101 0l25.056-25.302c0.858-0.867 0.858-2.269 0-3.133l-25.056-25.306c-0.858-0.867-2.243-0.867-3.101 0s-0.858 2.266 0 3.133l22.848 23.738-22.848 23.738z"
+        />
+      </svg>
+    </span>
+  </div>
+  </div>
+  <div class="my-slider">
+    <div class="item"><img src="assets/img/slide-2.jpg" alt="" /></div>
+    <div class="item"><img src="photos/banner.png" alt="" /></div>
+    <div class="item"><img src="assets/img/slide-4.jpg" alt="" /></div>
+  </div>
 </section>

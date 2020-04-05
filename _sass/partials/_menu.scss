@@ -283,8 +283,10 @@ config
   }
 }
 @media (max-width: 600px) {
-  #main-img {
-    background-image: url("/photos/banner2.png");
+  #custom_controlsContainer {
+     {
+      display: none;
+    }
   }
 }
 

@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://localhost:4000/posts/" />
 <meta property="og:site_name" content="Netjapa websites e apps" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"MontagemBR","url":"http://localhost:4000/posts/","description":"Criação de sites e Desenvolvimento de sites e apps, mobile apps, aplicativos para celular, aplicativos android, site, app, aplicativo, e-commerce, loja virtual","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"MontagemBR","description":"Criação de sites e Desenvolvimento de sites e apps, mobile apps, aplicativos para celular, aplicativos android, site, app, aplicativo, e-commerce, loja virtual","url":"http://localhost:4000/posts/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <head>
@@ -28,10 +28,7 @@
     MontagemBR
   </title>
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"
-  />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
   <script type="text/javascript">
     function hasClass(e, t) {
       return e.className.match(new RegExp("(\\s|^)" + t + "(\\s|$)"));
@@ -200,7 +197,7 @@
       <!-- Bootstrap core JavaScript -->
 <script src="/assets/js/apollo.js"></script>
 <script src="/assets/js/vanilla.js.responsive.menu.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script type="text/javascript">
   responsivemenu.init({
     wrapper: document.querySelector(".navigation_container1"),
@@ -220,20 +217,21 @@
   //    });
 </script>
 <script type="text/javascript">
-  var slider = tns({
-    container: ".my-slider",
-    mode: "carousel",
-    items: 1,
-    slideBy: "page",
-    autoplay: true,
-    nav: false,
-    autoplayButtonOutput: false,
-    controlsText: [" < ", " > "],
-    controlsContainer: "#custom_controlsContainer",
-    nextButton: "#prev",
-    nextButton: "#next", // String selecto
-    autoHeight: true,
-    autoWidth: true
+  var mySwiper = new Swiper(".swiper-container", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination"
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
   });
 </script>
 <!-- 

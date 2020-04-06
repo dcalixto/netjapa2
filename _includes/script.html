@@ -1,7 +1,7 @@
 <!-- Bootstrap core JavaScript -->
 <script src="{{ site.baseurl }}/assets/js/apollo.js"></script>
 <script src="{{ site.baseurl }}/assets/js/vanilla.js.responsive.menu.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script type="text/javascript">
   responsivemenu.init({
     wrapper: document.querySelector(".navigation_container1"),
@@ -21,20 +21,21 @@
   //    });
 </script>
 <script type="text/javascript">
-  var slider = tns({
-    container: ".my-slider",
-    mode: "carousel",
-    items: 1,
-    slideBy: "page",
-    autoplay: true,
-    nav: false,
-    autoplayButtonOutput: false,
-    controlsText: [" < ", " > "],
-    controlsContainer: "#custom_controlsContainer",
-    nextButton: "#prev",
-    nextButton: "#next", // String selecto
-    autoHeight: true,
-    autoWidth: true
+  var mySwiper = new Swiper(".swiper-container", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination"
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
   });
 </script>
 <!-- 

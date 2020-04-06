@@ -522,4 +522,9 @@ config
 .swiper-container {
   width: 100%;
   height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+
+  overflow: hidden;
+  z-index: 1;
 }

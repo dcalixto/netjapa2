@@ -1,15 +1,20 @@
 <!-- start Mobile Nav section -->
 
+<!-- end of Mobile Nav section -->
 
 
-<header>
+<header >
+
+ 
+
   <nav >
-    <div id="nav-container">
+    <div id="nav-container"  >
       <div
-      class="navigation_container navigation_container1"
+      class="ui pointing menu stackable"
       role="navigation"
       aria-label="Main menu"
     >
+    
       <a class="home" href="{{ "/" | relative_url }}">
         <img
           style="width:152px;height:20px"
@@ -19,14 +24,35 @@
         />
       </a>
  
-      <ul class="nav">
+     <!-- <ul class="nav">
        
         {% include navigation.html navigation=site.data.navigation %} 
 
       </ul>
+      
+      -->
+      <div class="right menu">
+      <a class="item">
+        Messages
+      </a>
+      <a class="item">
+        Friends
+      </a>
+      </div>
+      <div class="hamburger">
+        <span class="hamburger-bun"></span>
+        <span class="hamburger-patty"></span>
+        <span class="hamburger-bun"></span>
+      </div>
+      
     </div>
+  
     </div>
+  
   </nav>
+
+
+
 </header>
 
 

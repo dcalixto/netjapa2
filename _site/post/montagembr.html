@@ -30,7 +30,9 @@
     MontagemBR
   </title>
   <link rel="stylesheet" href="/assets/css/main.css">
+
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+
   <script type="text/javascript">
     function hasClass(e, t) {
       return e.className.match(new RegExp("(\\s|^)" + t + "(\\s|$)"));
@@ -50,16 +52,21 @@
   <body>
       <!-- start Mobile Nav section -->
 
+<!-- end of Mobile Nav section -->
 
 
-<header>
+<header >
+
+ 
+
   <nav >
-    <div id="nav-container">
+    <div id="nav-container"  >
       <div
-      class="navigation_container navigation_container1"
+      class="ui pointing menu stackable"
       role="navigation"
       aria-label="Main menu"
     >
+    
       <a class="home" href="/">
         <img
           style="width:152px;height:20px"
@@ -69,20 +76,20 @@
         />
       </a>
  
-      <ul class="nav">
+     <!-- <ul class="nav">
        
         
 
 
   <li  class="nav-item "
   >
-    <a  class="nav-link" href="/contact">Contato</a>
+    <a  class="nav-link item" href="/contact">Contato</a>
     
   </li>
 
   <li  class="nav-item "
   >
-    <a  class="nav-link" href="/posts">Trabalhos</a>
+    <a  class="nav-link item" href="/posts">Trabalhos</a>
     
   </li>
 
@@ -90,9 +97,30 @@
  
 
       </ul>
+      
+      -->
+      <div class="right menu">
+      <a class="item">
+        Messages
+      </a>
+      <a class="item">
+        Friends
+      </a>
+      </div>
+      <div class="hamburger">
+        <span class="hamburger-bun"></span>
+        <span class="hamburger-patty"></span>
+        <span class="hamburger-bun"></span>
+      </div>
+      
     </div>
+  
     </div>
+  
   </nav>
+
+
+
 </header>
 
 
@@ -157,27 +185,16 @@
 <!-- end footer section -->
 
       <!-- Bootstrap core JavaScript -->
+<script
+  type="text/javascript"
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+></script>
+
 <script src="/assets/js/apollo.js"></script>
-<script src="/assets/js/vanilla.js.responsive.menu.js"></script>
+
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-<script type="text/javascript">
-  responsivemenu.init({
-    wrapper: document.querySelector(".navigation_container1"),
-    //togglecontent: "menu",
-    togglecontent: '<span class="toggle-text">menu</span>',
+<script src="/assets/js/hamburger.js"></script>
 
-    sticky: 0
-    //      animateduration: 1000,
-    //      subanimateduration: 1000,
-  });
-
-  //    responsivemenu.init({
-  //        wrapper: document.querySelector('.navigation_container2'),
-  //        onAfterInit: function() {
-  //            console.log('after init 2');
-  //        }
-  //    });
-</script>
 <script type="text/javascript">
   var mySwiper = new Swiper(".swiper-container", {
     // Optional parameters

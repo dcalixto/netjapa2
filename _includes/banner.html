@@ -9,7 +9,13 @@
         class="swiper-slide"
         style="background-image: url('{{ slide.image }}');"
       >
-        <!-- <img src="photos/banner-products.jpeg" alt="" />-->
+        <div class="banner-text">
+          <p>{{ slide.heading }}</p>
+
+          <p class="lead text-shadow-default">
+            {{ slide.text }}
+          </p>
+        </div>
       </div>
       <!-- <div class="swiper-slide">
         <img src="photos/banner-ferrari.jpeg" alt="" />

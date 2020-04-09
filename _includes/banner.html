@@ -3,15 +3,21 @@
   <div class="swiper-container">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
+      {% for slide in site.slides limit:5 %}
       <!-- Slides -->
-      <div class="swiper-slide">
-        <img src="assets/img/slide-2.jpg" alt="" />
+      <div
+        class="swiper-slide"
+        style="background-image: url('{{ slide.image }}');"
+      >
+        <!-- <img src="photos/banner-products.jpeg" alt="" />-->
       </div>
-      <div class="swiper-slide"><img src="photos/banner.png" alt="" /></div>
-      <div class="swiper-slide">
-        <img src="assets/img/slide-4.jpg" alt="" />
+      <!-- <div class="swiper-slide">
+        <img src="photos/banner-ferrari.jpeg" alt="" />
       </div>
-      ...
+      <div class="swiper-slide">
+        <img src="photos/banner-whats.jpeg" alt="" />
+      </div>-->
+      {% endfor %}
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>

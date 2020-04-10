@@ -8,4 +8,5 @@ post-images:
 
 body: MontagemBR, site de servicos de momtagem e desmontagem de moveis no Rio de Janeiro.
 site: https://www.montagembr.com
+status: concluido
 ---

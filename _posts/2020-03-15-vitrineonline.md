@@ -6,4 +6,5 @@ post-images:
   - "/photos/vitrineonline.png"
   - "/photos/vitrineonline2.png"
 body: Vitrineonline Catalago de produtos e serviços, construção  em andamento.
+status: trabalho em progresso
 ---

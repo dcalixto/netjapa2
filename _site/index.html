@@ -358,7 +358,7 @@
         name="input-message"
       ></textarea>
 
-      <button type="submit" onclick="return newIdea();">Enviar</button>
+      <button type="submit">Enviar</button>
     </form>
   </div>
 </section>
@@ -492,6 +492,17 @@
     }
   });
 </script>
+<script type="text/javascript">
+  $("#contact-form").submit(function(e) {
+    e.preventDefault();
+
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize()).then(function() {
+      alert("Thank you!");
+    });
+  });
+</script>
+
 <!-- 
    MADE BY NETJAPA
   -->

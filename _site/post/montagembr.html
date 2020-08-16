@@ -2,7 +2,7 @@
 <html lang="pt-BR">
     <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>MontagemBR | Netjapa websites e apps</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.0.1" />
 <meta property="og:title" content="MontagemBR" />
 <meta property="og:locale" content="pt_BR" />
 <meta name="description" content="Criação de sites e Desenvolvimento de sites e apps, mobile apps, aplicativos para celular, aplicativos android, site, app, aplicativo, e-commerce, loja virtual" />
@@ -13,7 +13,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-15T00:00:00-03:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"http://localhost:4000/post/montagembr","headline":"MontagemBR","dateModified":"2020-03-15T00:00:00-03:00","datePublished":"2020-03-15T00:00:00-03:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/post/montagembr"},"description":"Criação de sites e Desenvolvimento de sites e apps, mobile apps, aplicativos para celular, aplicativos android, site, app, aplicativo, e-commerce, loja virtual","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","description":"Criação de sites e Desenvolvimento de sites e apps, mobile apps, aplicativos para celular, aplicativos android, site, app, aplicativo, e-commerce, loja virtual","headline":"MontagemBR","dateModified":"2020-03-15T00:00:00-03:00","datePublished":"2020-03-15T00:00:00-03:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/post/montagembr"},"url":"http://localhost:4000/post/montagembr","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <head>
@@ -30,20 +30,18 @@
     MontagemBR
   </title>
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/swiper.css">
+ 
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164237387-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <script type="text/javascript">
-    function hasClass(e, t) {
-      return e.className.match(new RegExp("(\\s|^)" + t + "(\\s|$)"));
-    }
-    var el = document.documentElement;
-    var cl = "no-js";
-    if (hasClass(el, cl)) {
-      var reg = new RegExp("(\\s|^)" + cl + "(\\s|$)");
-      el.className = el.className.replace(reg, " js");
-    }
-  </script>
+  gtag('config', 'UA-164237387-1');
+</script>
   <!-- 
    MADE BY NETJAPA
   -->
@@ -204,8 +202,10 @@
 
 <script src="/assets/js/apollo.js"></script>
 
-<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
 <script src="/assets/js/hamburger.js"></script>
+<script src="/assets/js/swiper.min.js"></script>
+
 
 <script type="text/javascript">
   var mySwiper = new Swiper(".swiper-container", {
@@ -228,16 +228,58 @@
     }
   });
 </script>
-<script type="text/javascript">
-  $("#contact-form").submit(function(e) {
-    e.preventDefault();
 
-    var $form = $(this);
-    $.post($form.attr("action"), $form.serialize()).then(function() {
-      alert("Mensagem enviada");
+
+
+<script>
+  window.addEventListener("DOMContentLoaded", function() {
+
+    // get the form elements defined in your form HTML above
+    
+    var form = document.getElementById("my-form");
+    var button = document.getElementById("my-form-button");
+    var status = document.getElementById("my-form-status");
+
+    // Success and Error functions for after the form is submitted
+    
+    function success() {
+      form.reset();
+      button.style = "display: none ";
+      status.innerHTML = "Mensagem enviada!";
+    }
+
+    function error() {
+      status.innerHTML = "Oops! Tente novamente.";
+    }
+
+    // handle the form submission event
+
+    form.addEventListener("submit", function(ev) {
+      ev.preventDefault();
+      var data = new FormData(form);
+      ajax(form.method, form.action, data, success, error);
     });
   });
+  
+  // helper function for sending an AJAX request
+
+  function ajax(method, url, data, success, error) {
+    var xhr = new XMLHttpRequest();
+    xhr.open(method, url);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        success(xhr.response, xhr.responseType);
+      } else {
+        error(xhr.status, xhr.response, xhr.responseType);
+      }
+    };
+    xhr.send(data);
+  }
 </script>
+
+
 
 <!-- 
    MADE BY NETJAPA

@@ -1,5 +1,5 @@
 ---
-title: Confira nossos serviços
+title: Site a partir de R$ 300,00
 layout: home
 services:
   - heading: Sites

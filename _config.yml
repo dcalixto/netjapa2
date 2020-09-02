@@ -1,13 +1,13 @@
 # Basic settings
 url: "https://www.netjapa.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Netjapa websites e apps" # the name of your site, e.g. ACME Corp.
-description: "Criação de sites e Desenvolvimento de sites e apps,
-  mobile apps, aplicativos para celular,
-  aplicativos android, site, app, aplicativo, e-commerce, loja virtual"
-tagline: "Criação de sites e Desenvolvimento de sites e apps,
-  mobile apps, aplicativos para celular,
-  aplicativos android, site, app, aplicativo, e-commerce, loja virtual"
+title: "Netjapa Criação de site profissional e app" # the name of your site, e.g. ACME Corp.
+description: "Criar site profissional e app, desenvolvimento de site, app android, site, app, aplicativo, 
+ecommerce, fazer site de vendas, comprar site profissional"
+  
+tagline: "criar site profissional e app, desenvolvimento de site, app android, site, app,
+ aplicativo, ecommerce"
+  
 lang: "pt-BR"
 # Build settings
 markdown: kramdown
@@ -43,9 +43,11 @@ sass:
 #Collections
 collections:
   slides:
+  services:
 include:
   - _pages
   - _posts
+  - _services
 section: true
 
 # set to 'true' to enable Netlify CMS (/admin) in production builds

@@ -1,27 +1,37 @@
-<section><h2 class="text-center">Trabalhos Recentes</h2></section>
-<section>
-  <div class="works">
-    <!-- orders content according to the "publishdate" field in front matter -->
-    {% for post in site.posts limit:7 %}
+<section class="grey-card-no-padding">
+  <div class="container  pure-g">
+    <div class="gallery-container">
+      <div class="pure-u-1 pure-u-md-1">
+        <div class="grid-layout">
+          <div class="container  pure-g">
+            <div class="pure-u-1 pure-u-md-1">
+              <h1>Trabalhos</h1>
+            </div>
+            {% for post in site.posts %}
 
-    <div class="recent">
-      <a href="{{ post.url }}">
-        <img
-          class="img-fluid img-thumbnail pull-left"
-          src="{{ post.post-images[0] }}"
-        />
-      </a>
-
-      <h3><a id="black" href="{{ post.url}}">{{ post.title }}</a></h3>
-
-      <p>
-        {{ post.heading}}
-      </p>
-      <p><a class="black-link" href="{{ post.site }}">{{ post.site }}</a></p>
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <p class="green_status"><b>{{ post.status }}</b></p>
+            <div class=" pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+              <div class="card">
+                <div class="card-header">
+                  <a href="{{ post.site }}">
+                    <img src="{{ post.post-images[0] }}" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <a href="{{ post.site }}"><h2>{{ post.title }}</h2></a>
+                  <p>{{post.body}}</p>
+                  <time
+                    class="post-date"
+                    datetime="{{ post.date | date_to_xmlschema }}"
+                  >
+                    {% include data.html date=post.date %}
+                  </time>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
     </div>
-
-    {% endfor %}
   </div>
 </section>

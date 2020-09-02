@@ -1,6 +1,6 @@
 ---
-layout: service
-title: The Blog
-permalink: /service
+layout: services
+title: Servicos
+permalink: /services
 section: service
 ---

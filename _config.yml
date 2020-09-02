@@ -18,17 +18,17 @@ kramdown:
   auto_ids: false
 
 plugins:
-  - jekyll-paginate
+ # - jekyll-paginate
   - jekyll-seo-tag
 
   - jekyll-menus
 #paginate: 3
 #paginate_path: service/page:num/
-paginate: 3
-paginate_path: posts/page:num/
+#paginate: 3
+#paginate_path: posts/page:num/
 
 #Permalink
-permalink: /post/:title
+#permalink: /post/:title
 source: .
 destination: ./_site
 # Compress CSS

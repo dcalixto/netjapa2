@@ -8,7 +8,7 @@ ecommerce, fazer site de vendas, comprar site profissional"
 tagline: "criar site profissional e app, desenvolvimento de site, app android, site, app,
  aplicativo, ecommerce"
   
-lang: "pt-BR"
+lang: "pt-br"
 # Build settings
 markdown: kramdown
 
@@ -18,17 +18,12 @@ kramdown:
   auto_ids: false
 
 plugins:
- # - jekyll-paginate
+
   - jekyll-seo-tag
-
+  - jekyll-multiple-languages-plugin
   - jekyll-menus
-#paginate: 3
-#paginate_path: service/page:num/
-#paginate: 3
-#paginate_path: posts/page:num/
+  - jemoji
 
-#Permalink
-#permalink: /post/:title
 source: .
 destination: ./_site
 # Compress CSS
@@ -60,6 +55,12 @@ analytics: false
 compress_html:
   clippings: all
 
+
+languages: ["pt-br", "en"]
+#exclude_from_localizations: ["assets", "_sass",  "photos"]
+defaultLang: pt-br
+
+  
 # Social
 
 social:

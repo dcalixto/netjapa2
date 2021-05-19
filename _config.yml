@@ -1,12 +1,13 @@
 # Basic settings
 url: "https://www.netjapa.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Netjapa Criação de site profissional e app" # the name of your site, e.g. ACME Corp.
-description: "Criar site profissional e app, desenvolvimento de site, app android, site, app, aplicativo, 
-ecommerce, fazer site de vendas, comprar site profissional"
+title: "NETJAPA Criação de site profissional, loja virtual e app em Paraty-RJ" # the name of your site, e.g. ACME Corp.
+description: "A NETJAPA criação de sites profissionais em Paraty-RJ. Desenvolvemos sites personalizados,
+Criar site profissional e app, desenvolvimento de site, app android, site, app, aplicativo, 
+ecommerce, fazer site de vendas, comprar site profissional, loja virtual"
   
 tagline: "criar site profissional e app, desenvolvimento de site, app android, site, app,
- aplicativo, ecommerce"
+ aplicativo, ecommerce, loja virtual, Paraty, Paraty-RJ, Costa Verde"
   
 lang: "pt-br"
 # Build settings
@@ -23,6 +24,8 @@ plugins:
   - jekyll-multiple-languages-plugin
   - jekyll-menus
   - jemoji
+  - jekyll-sitemap
+
 
 source: .
 destination: ./_site

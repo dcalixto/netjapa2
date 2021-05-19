@@ -42,7 +42,7 @@
   <link rel="stylesheet" href="/assets/css/swiper.css">
   <link
     rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"
   />
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -96,6 +96,34 @@
     
     </ul>
    </nav>-->
+
+
+   <div class="right menu navigation">
+    
+
+
+ 
+ 
+    <a  class=" item" href="/contact">Contato</a>
+    
+ 
+
+ 
+ 
+    <a  class=" item" href="/services">Servicos</a>
+    
+ 
+
+
+ 
+ 
+  </div>
+  <div class="hamburger">
+    <span class="hamburger-bun"></span>
+    <span class="hamburger-patty"></span>
+    <span class="hamburger-bun"></span>
+  </div>
+
   </div>
     </div>
 
@@ -227,9 +255,10 @@
     <div class="swiper-pagination"></div>
 
     <!-- If we need navigation buttons -->
-    <div id="navigation_buttons">
+    <!-- <div id="navigation_buttons">
       <div class="swiper-button-prev swiper-left"></div>
       <div class="swiper-button-next swiper-right"></div>
+      -->
     </div>
   </div>
 </section>
@@ -241,6 +270,28 @@
           <div class="container  pure-g">
             <div class="pure-u-1 pure-u-md-1">
               <h1 style="margin-left: 15px">Trabalhos</h1>
+            </div>
+            
+
+            <div class=" pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+              <div class="card">
+                <div class="card-header">
+                  <a href="https://www.admboat.com">
+                    <img src="/photos/admboat.svg" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <a href="https://www.admboat.com"><h2>admboat.com</h2></a>
+                  <p>admboat.com, site de aluguel e venda de embarcações em Paraty e toda costa verde.</p>
+                  <time
+                    class="post-date"
+                    datetime="2021-05-19T00:00:00-03:00"
+                  >
+                      19 de maio de 2021
+
+                  </time>
+                </div>
+              </div>
             </div>
             
 
@@ -632,10 +683,8 @@
 
 <script src="/assets/js/apollo.js"></script>
 
-
 <script src="/assets/js/hamburger.js"></script>
 <script src="/assets/js/swiper.min.js"></script>
-
 
 <script type="text/javascript">
   var mySwiper = new Swiper(".swiper-container", {
@@ -645,23 +694,20 @@
 
     // If we need pagination
     pagination: {
-      el: ".swiper-pagination"
+      el: ".swiper-pagination",
     },
 
     // Navigation arrows
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      prevEl: ".swiper-button-prev",
     },
+
     autoplay: {
-      delay: 5000
-    }
+      delay: 5000,
+    },
   });
 </script>
-
-
-
-
 
 <!-- 
    MADE BY NETJAPA

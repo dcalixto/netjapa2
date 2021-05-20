@@ -1,7 +1,7 @@
 ---
-heading: Preço promocional somente essa semana
-t1: Faça já sua loja online 😉
-t2: Painel administrativo CMS incluso ✅
-t3: Sites, catálogos e apps 💥
+heading: Gerencie e impulsione o seu negócio online
+
+t1: Construa relacionamentos com clientes 😉
+t2: Aceite pagamentos diretamente em seu site
 image: /photos/banner6.svg
 ---

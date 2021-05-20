@@ -11,8 +11,8 @@ tagline: "Criar site, desenvolvimento de site, app android, site,
 
 
 title: "Criar Site Profissional, Loja Virtual e App na NETJAPA.COM"
-  
-lang: "pt-br"
+timezone: America/Sao_Paulo
+lang: pt-br
 # Build settings
 markdown: kramdown
 

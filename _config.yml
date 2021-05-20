@@ -1,12 +1,13 @@
 # Basic settings
 url: "https://www.netjapa.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Criar Site Profissional, Loja Virtual e App na NETJAPA.COM" # the name of your site, e.g. ACME Corp.
+title: "Criar Site Profissional, Loja Virtual e App na NETJAPA.COM"
+ # the name of your site, e.g. ACME Corp.
 description: "Tenha um site profissional e personalizado para você ou 
 para sua empresa com a NETJAPA.COM. Criamos sites, loja virtual e apps. Venha! - Paraty"
 
-tagline: "Criar site, desenvolvimento de site, app android, site, 
- aplicativo, e-commerce, loja virtual, Paraty, Paraty-RJ, Costa Verde, NETJAPA.COM"
+#tagline: "Criar site, desenvolvimento de site, app android, site, 
+ #aplicativo, e-commerce, loja virtual, Paraty, Paraty-RJ, Costa Verde, NETJAPA.COM"
  
   
 lang: "pt-br"

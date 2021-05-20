@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Netjapa
+title: Home
 permalink: /
 section: home
 ---

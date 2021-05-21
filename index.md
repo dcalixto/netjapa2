@@ -1,5 +1,5 @@
 ---
-title: NETJAPA
+title: NETJAPA.COM
 layout: home
 services:
   - heading: Sites

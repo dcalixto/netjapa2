@@ -6,6 +6,7 @@ post-images:
   - "/photos/syntekoboituva.svg"
 
 body: Synteko Boituva prestadora de serviços de aplicação de verniz.
-status: concluido
+status: concluído
 site: https://www.syntekoboituva.com
+projeto: Site
 ---

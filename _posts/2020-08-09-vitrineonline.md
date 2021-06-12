@@ -6,6 +6,7 @@ post-images:
   - "/photos/vitrineonline.svg"
 
 body: Vitrineonline Catálogo de produtos.
-status: concluido
+status: concluído
 site: https://www.vitrineonline.com
+projeto: catálogo
 ---

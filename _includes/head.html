@@ -1,26 +1,19 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
- <title>
-  
-    {% if page.layout == 'home' %}
-     {{ site.title }}
-    {   % else %}
-    {{  page.title | default: site.title }}
-   
-    {% endif %}
-
-
+  <title>
+    {% if page.layout == 'home' %} {{ site.title }} { % else %} {{ page.title |
+    default: site.title }} {% endif %}
   </title>
   <meta property="og:image" content="{{ site.url }}/photos/montage.jpg" />
   <meta charset="utf-8" />
- 
-    <meta
+
+  <meta
     name="keywords"
     content="NETJAPA, netjapa.com, Criar site, Wordpress, Desenvolvimento de site, App,
   Mobile Apps, Aplicativo para Celular,
   Aplicativos Android, Site, Aplicativo, E-Commerce, Loja Virtual, Paraty, Paraty-RJ, Costa Verde"
   />
-  <link
+  <!-- <link
     rel="stylesheet"
     href="https://yui-s.yahooapis.com/pure/0.6.0/pure-min.css"
   />
@@ -29,8 +22,18 @@
     rel="stylesheet"
     href="https://yui-s.yahooapis.com/pure/0.6.0/grids-responsive-min.css"
   />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+  
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/assets/css/swiper.css" | relative_url }}">
+
+  <link
+    href="https://prium.github.io/reign-IV/assets/css/theme.css"
+    rel="stylesheet"
+  />-->
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <!--<link rel="stylesheet" href="{{ "/assets/css/swiper.css" | relative_url }}">-->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"
@@ -50,6 +53,7 @@
 
     gtag("config", "UA-164237387-1");
   </script>
+
   <!-- 
    MADE BY NETJAPA
   -->

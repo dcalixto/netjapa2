@@ -8,4 +8,5 @@ post-images:
 body: Catálogo de produtos para bebe e crianças
 status: trabalho em progresso
 site: https://www.hannakids.com.br
+projeto: catálogo
 ---

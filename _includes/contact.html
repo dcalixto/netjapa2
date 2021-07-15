@@ -1,104 +1,91 @@
 
 
 
-{% if site.data.information %} {% assign info =
-site.data.information %}
 
-<section class="pb-5 pt-0">
-    <div class="container-fluid p-0 pb-3">
-        <iframe class="map" src="https://maps.google.com/maps?q=Av%20Roberto%20Silveira%2095%20-%20Ch%C3%A1cara%20da%20Saudade&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-    </div>
+
+
+
+
+<section class="ftco-section">
     <div class="container">
-        <div class="row text-center justify-content-center pt-5">
-            <div class="col-12 col-md-7">
-                <h1>ENTRE EM CONTATO</h1>
-            </div>
-        </div>
+<div class="row justify-content-center pb-4">
+<div class="col-md-12 heading-section text-center ftco-animate fadeInUp ftco-animated">
 
-        <div class="row justify-content-center pt-4">
-            <div class="col-12 col-md-7">
-                <form      
-                     class="pure-form pure-form-stacked"
-                
-                     action="https://formspree.io/mbjzjqnp"
-                    method="POST"
-                     name="contato">
+
+<h2 class="mb-4"><span class="red"> ENTRE EM CONTATO</span></h2>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="row mt-md-5">
+                <div class="col-md-7 main-desktop">
+                    <iframe src="https://www.google.com/maps/embed/v1/place?q=netjapa&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                </div>
+                <div class="col-md-5 mt-5">
                     <div class="row">
-                        <div class="col">
-                            <input type="text" name="name" class="form-control" placeholder="Nome">
+                        <div class="col-md-12 d-flex">
+                           
+                        
+                            <img src="/assets/img/placeholder.png" style="height: 40px; margin-right: 20px;">
+                            <div class="">
+                                <h3 class="title-component-18 color-component-primary font-weight-600">Endereço</h3>
+                                <p class="text-component" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                                    <span itemprop="streetAddress">Av. Roberto Silveira, 1041B</span>,
+                                    <span itemprop="addressLocality">Paraty, RJ</span> - 
+                                  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5 mt-md-4">
+                        <div class="col-md-12 d-flex">
+                            <img src="/assets/img/telephone.png" style="height: max-content; margin-right: 20px;">
+                            <div class="">
+                                <h3 class="title-component-18 color-component-primary font-weight-600">Contato</h3>
+
+                                
+                                <p class="text-component" itemprop="telephone" content="+5524993017256">(24)99301-7256</p>
+                                <p class="text-component" itemprop="email"></p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="row mt-4">
-                        <div class="col">
-                            <input type="text" class="form-control"  placeholder="Telefone ou Email">
+                    <div class="row mt-5 mt-md-4">
+                        <div class="col-md-12 d-flex">
+                            <img src="/assets/img/back-in-time.png" style="height: max-content; margin-right: 20px;">
+                            <div class="">
+                                <h3 class="title-component-18 color-component-primary font-weight-600">Horário de funcionamento</h3>
+                                                <p class="text-component" itemprop="openingHours" content="Seg, Ter, Qua, Qui, Sex 8:00-21:30">
+                    Segunda-Sexta 10am-03:30am                </p>
+                            <p class="text-component" itemprop="openingHours" content="Sáb 8:00-12:00">
+                    Sábado 10am-12pm                </p>
+                                        </div>
                         </div>
                     </div>
 
-                    <div class="row mt-4">
-                        <div class="col">
-                            <textarea class="form-control" rows="7" name="message" rows="3" placeholder="Como podemos te ajudar?"></textarea>
+                    <div class="row mt-5 mt-md-5">
+                        <div class="col-md-12">
+                        
+                            <p class="link-component link-component-primary mt-md-3 mt-5">
+                                <a class="color-component-primary " target="_self" href="">
+                                                                    </a>
+                            </p>
                         </div>
                     </div>
-                    <div class="row mt-4">
-                        <div class="col text-center">
-                            <button type="submit" class="btn btn-danger">Enviar</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="row-100"></div>
-    </div>
-    <div class="bg-danger mt-5 pt-5 pb-5 text-light">
-        <div class="container">
-            <div class="row-50"></div>
-
-
- {% if site.data.information %} {% assign info =
-site.data.information %}
-            <div class="row justify-content-center text-center">
-                <div class="col-12 col-md mr-auto ml-auto">
-                   <i class="fa fa-phone fa-2x"></i>
-
-                    <p class="text-h3">  {{ info.phone }}</p>
                 </div>
-
-                <div class="col-12 col-md pt-4 pt-md-0 mr-auto ml-auto">
-                 <i class="fa fa-map-marker fa-2x"></i>
-                    <p class="text-h3">{{info.address}}.
-                        <br>{{info.address2}}</p>
-                </div>
-
-                <div class="col-12 col-md pt-4 pt-md-0 mr-auto ml-auto">
-                <i class="fa fa-envelope fa-2x"></i>
-                    <p class="text-h3">{{info.email}}</p>
-                </div>
             </div>
-            {% endif %} 
-            <div class="row-50"></div>
-        </div>
-    </div>
 
-    <div class="container">
-         <div class="row text-center justify-content-center pt-5">
-            <div class="col-12 col-md-7">
-                <h1>COMPARTILHE E GANHE 15% DE DESCONTO</h1>
-            </div>
-        </div>
-
-        <div class="row-70"></div>
-        <div class="row text-center">
-            <div class="col">
-                <p class="text-h2 mt-4">
-                    <a class="mr-3" href="https://www.facebook.com/share.php?u={{url}}&title={{title}}"><i style="color:red" class="fa fa-facebook fa-2x"></i></a><a class="mr-3" href="https://api.whatsapp.com/send?phone=+5524993017256"><i style="color:red"class="fa fa-whatsapp fa-2x"></i></a><a class="mr-3" href="https://www.instagram.com/d.calixto84/"><i style="color:red"class="fa fa-instagram fa-2x"></i></a>
-                </p>
-            </div>
-        </div>
-    </div>
+</div>
 </section>
 
 
-{% endif %}
+
+
+
+
 
 

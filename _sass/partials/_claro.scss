@@ -4,6 +4,22 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+@media (min-width: 992px) {
+.col-lg-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+.col-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -16602,5 +16618,127 @@ background: #1AA85C;
   -webkit-transform: translate3d(-15px, 0, 0);
   transform: translate3d(-15px, 0, 0);
 }
+
+
+.card img {
+ max-width: 250px;
+    width: 100%;
+    position:50%
+}
+
+.card {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100%;
+    width: 100%;
+}
+
+.col-servico h1 {
+    color: #ffffff;
+      font-family:"Helvetica";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+div[class*="col"], div[class*="row"], hr {
+    padding: 0;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.col-servico {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 700px;
+    padding-top: 55px !important;
+    background-size: cover;
+}
+.col-servico .texto {
+    width: 100%;
+    max-width: 370px;
+}
+
+.col-servico p {
+    color: #ffffff;
+    font-family:"Helvetica";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.col-servico .saiba-mais {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 9px 15px rgb(0, 0, 0.15);
+    border-radius: 3px;
+    background-color: #ffffff;
+    line-height: 50px;
+    padding: 0 40px;
+    color: #333333;
+     font-family:"Helvetica";
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 170px;
+
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: auto;
+    border-radius: 1000px;
+    background: #fff;
+    box-shadow: 0px 0px 6px rgb(0, 0, 0.50);
+    z-index: 10000;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+}
+
+.red {background: red; color:#fff}
+
+.section-teste {
+    background-color: red;
+    background-image: url(/photos/bitmap.png);
+    padding-top: 70px;
+    min-height: 635px;
+    background-position: top;
+    padding-bottom: 70px;
+    background-size: auto 100%;
+}
+
+
+a.btn-vox-secondary:hover {
+    color: #ffffff;
+    background-color: #61b971;
+}
+a.btn-vox-secondary {
+    box-shadow: 5px 9px 15px rgb(0, 0, 0.15);
+    border-radius: 3px;
+    border: 2px solid #61b971;
+    line-height: 46px;
+    padding: 0 40px;
+    color: #fff;
+ background: #61b971;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 
 

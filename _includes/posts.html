@@ -1,23 +1,30 @@
 
 <section class="pt-5 pb-5">
   <div class="container">
-        <h2 class="mb-5">Trabalhos</h2>
+    <div class="row justify-content-center pb-4">
+<div class="col-md-12 heading-section text-center ftco-animate fadeInUp ftco-animated">
+
+<h2 class="mb-4"><span class="red"> TRABALHOS</span></h2>
+</div>
+</div>
+
+
 
   
     <div class="row mb-md-2">
          {% for post in site.posts %}
         <div class="col-md-6 col-lg-4">
-            <div class="card shadow-sm border-light mb-4">
+            <div class="card border-0 mb-4">
                
 
-                       <a class="position-relative" href="{{ post.site }}">
-                    <img src="{{ post.post-images[0] }}" class="card-img-top" alt="image" />
+                       <a class="position-relative mx-auto" href="{{ post.site }}">
+                    <img src="{{ post.post-images[0] }}" class="card-img-top mx-auto" alt="image" />
                   </a>
                 <div class="card-body">
                  
 
- <a href="{{ post.site }}"
-                > <h5 class="font-weight-normal">
+ <a href="{{ post.site }}" class="mx-auto">
+                 <h5 class="font-weight-normal ">
                   {{ post.title }}
                 </h5></a >
              
@@ -31,12 +38,6 @@
 
 
 
-
-     <div class="d-flex justify-content-between">
-                        <div class="col pl-0"><span class="text-muted font-small d-block mb-2">Projeto</span> <span class=" text-dark font-weight-bold">{{post.projeto}}</span></div>
-                        <div class="col"><span class="text-muted font-small d-block mb-2">Estado</span> <span class=" text-dark font-weight-bold">{{post.status}}</span></div>
-                        <div class="col pr-0"><span class="text-muted font-small d-block mb-2">Detalhes</span> <span class=" text-dark font-weight-bold"><a href="{{ post.title }}">ver mais...</a></span></div>
-                    </div>
 
 
 
